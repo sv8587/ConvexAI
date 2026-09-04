@@ -6,10 +6,10 @@ CONVEX AI is an intelligent monitoring platform designed for conveyor belt syste
 
 The system is designed to combine multi-parameter sensing, edge processing, long-range communication, digital visualization, condition monitoring and predictive analytics to identify abnormal conveyor conditions before they escalate into major belt damage or joint rupture.
 
-**Link: https://convexai-pi.vercel.app/**
-
 > **Smart India Hackathon 2026 — SIH26008**  
 > **Ministry of Steel | Hardware | Smart Automation**
+>
+> **Link: https://convexai-pi.vercel.app/**
 
 ---
 
