@@ -92,9 +92,52 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Left: Brand & Telemetry Mesh Identity */}
       <div className="flex items-center gap-3.5">
         <div className="relative">
-          <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center">
-            <ShieldAlert className="w-5 h-5 text-sky-400" />
-          </div>
+          <div className="relative">
+  <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center">
+    <svg
+      viewBox="0 0 48 48"
+      className="w-6 h-6"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Conveyor / mountain-inspired CONVEX mark */}
+      <path
+        d="M8 34L18 18L25 27L32 12L40 34"
+        stroke="#22d3ee"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M8 37H40"
+        stroke="#14b8a6"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+
+      <circle
+        cx="18"
+        cy="18"
+        r="3"
+        fill="#22d3ee"
+      />
+
+      <circle
+        cx="32"
+        cy="12"
+        r="3"
+        fill="#14b8a6"
+      />
+    </svg>
+  </div>
+
+  {unreadCriticalCount > 0 && (
+    <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full border border-slate-900 text-[10px] font-bold text-white flex items-center justify-center">
+      {unreadCriticalCount}
+    </span>
+  )}
+</div>
           {unreadCriticalCount > 0 && (
             <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full border border-slate-900 text-[10px] font-bold text-white flex items-center justify-center">
               {unreadCriticalCount}
