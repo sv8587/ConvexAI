@@ -148,7 +148,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div>
           <div className="flex items-center gap-2.5">
             <h1 className="text-base font-bold text-white tracking-wide flex items-center gap-1.5">
-              <span>BeltGuard AI</span>
+              <span>ConvexAI</span>
               <span className="text-[11px] px-1.5 py-0.2 rounded bg-slate-800 text-slate-400 font-mono font-normal">
                 SIH-26008
               </span>
