@@ -6,9 +6,9 @@ CONVEX AI is an intelligent monitoring platform designed for conveyor belt syste
 
 The system is designed to combine multi-parameter sensing, edge processing, long-range communication, digital visualization, condition monitoring and predictive analytics to identify abnormal conveyor conditions before they escalate into major belt damage or joint rupture.
 
+> **Link: https://convexai-pi.vercel.app/**
 > **Smart India Hackathon 2026 — SIH26008**  
 > **Ministry of Steel | Hardware | Smart Automation**
-> **Link: https://convexai-pi.vercel.app/**
 
 ---
 
@@ -88,58 +88,6 @@ Audio alerts
 Engineering-oriented system visualization
 
 The digital prototype acts as a testbed for the proposed monitoring architecture before physical sensor-node deployment.
-
-🏗️ System Architecture
-                    CONVEX AI
-                        │
-                        ▼
-              ┌──────────────────┐
-              │   SENSOR LAYER   │
-              │                  │
-              │ Vibration        │
-              │ Strain / Tension │
-              │ Temperature      │
-              │ Speed / RPM      │
-              └────────┬─────────┘
-                       │
-                       ▼
-              ┌──────────────────┐
-              │ EDGE PROCESSING  │
-              │                  │
-              │ ESP32            │
-              │ Filtering        │
-              │ Pre-processing   │
-              │ Condition Check  │
-              └────────┬─────────┘
-                       │
-                       ▼
-              ┌──────────────────┐
-              │ COMMUNICATION    │
-              │                  │
-              │ LoRa             │
-              └────────┬─────────┘
-                       │
-                       ▼
-              ┌──────────────────┐
-              │ SERVER / ANALYTICS│
-              │                  │
-              │ Data Processing  │
-              │ Historical Data  │
-              │ Predictive Layer │
-              └────────┬─────────┘
-                       │
-                       ▼
-              ┌──────────────────┐
-              │    DASHBOARD     │
-              │                  │
-              │ Health Status    │
-              │ Telemetry        │
-              │ Trends           │
-              │ Alerts           │
-              └────────┬─────────┘
-                       │
-                       ▼
-                  MAINTENANCE
 
 🧠 Key Features
 1. 3D Conveyor Visualization
@@ -242,51 +190,6 @@ Utilities
 Canvas Confetti
 TypeScript
 ESLint / Oxlint
-📁 Project Structure
-CONVEX-AI/
-│
-├── public/
-│   ├── favicon.svg
-│   └── icons.svg
-│
-├── src/
-│   │
-│   ├── components/
-│   │   ├── BeltTwin3DVisualizer.tsx
-│   │   ├── BeltTwinContainer.tsx
-│   │   ├── BeltTwinVisualizer.tsx
-│   │   ├── EmergencyInterlockModal.tsx
-│   │   ├── Header.tsx
-│   │   ├── HeroMetricsBar.tsx
-│   │   ├── InterlockingSidebar.tsx
-│   │   ├── LiveTelemetryStreamer.tsx
-│   │   ├── MLAnalyticsPanel.tsx
-│   │   ├── OTSecurityCenter.tsx
-│   │   ├── OperatorShiftLog.tsx
-│   │   ├── ReplayScrubber.tsx
-│   │   ├── SimulationControls.tsx
-│   │   ├── SpliceMatrixTable.tsx
-│   │   ├── SpliceModal.tsx
-│   │   └── VisionTelemetryFeeds.tsx
-│   │
-│   ├── services/
-│   │   ├── audioAlerts.ts
-│   │   └── telemetryEngine.ts
-│   │
-│   ├── types/
-│   │   └── telemetry.ts
-│   │
-│   ├── App.tsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.tsx
-│
-├── index.html
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
 
 ⚙️ Getting Started
 Prerequisites
