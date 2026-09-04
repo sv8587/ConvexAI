@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #090d16;
+    --bg-card: #0f172a;
+    --bg-card-hover: #172339;
+    --border-color: #1e293b;
+    --border-subtle: #192438;
+    --accent-primary: #38bdf8;
+    --accent-success: #10b981;
+    --accent-warning: #f59e0b;
+    --accent-danger: #ef4444;
+  }
+
+  body {
+    background-color: #090d16;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Subtle Industrial Grid Background */
+.scada-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.scada-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Restrained Alert Pulses (Only for True Critical Alerts) */
+@keyframes scada-critical-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.4), 0 4px 12px rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.7), 0 8px 24px rgba(239, 68, 68, 0.35);
+    border-color: #ef4444;
+  }
+}
+
+.animate-critical-alert {
+  animation: scada-critical-pulse 2s infinite ease-in-out;
+}
+
+/* Conveyor Motion Pattern */
+@keyframes belt-flow-subtle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 24px 0;
+  }
+}
+
+.belt-moving-subtle {
+  background: repeating-linear-gradient(
+    90deg,
+    #131d2e 0px,
+    #131d2e 8px,
+    #1e293b 8px,
+    #1e293b 16px
+  );
+  background-size: 24px 100%;
+  animation: belt-flow-subtle 1.2s linear infinite;
+}
+
+.belt-stopped-subtle {
+  background: repeating-linear-gradient(
+    90deg,
+    #131d2e 0px,
+    #131d2e 8px,
+    #1e293b 8px,
+    #1e293b 16px
+  );
+}
+
+/* Clean Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
