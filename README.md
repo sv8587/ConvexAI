@@ -8,7 +8,6 @@ The system is designed to combine multi-parameter sensing, edge processing, long
 
 > **Smart India Hackathon 2026 — SIH26008**  
 > **Ministry of Steel | Hardware | Smart Automation**
->
 > **Link: https://convexai-pi.vercel.app/**
 
 ---
