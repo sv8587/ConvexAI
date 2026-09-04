@@ -25,8 +25,7 @@ interface HeaderProps {
   onTriggerEmergencyStop: () => void;
   onToggleConveyorState: () => void;
   onExportReport: () => void;
-  unreadCriticalCount: number;
-}
+  }
 
 export const Header: React.FC<HeaderProps> = ({
   telemetry,
@@ -36,7 +35,6 @@ export const Header: React.FC<HeaderProps> = ({
   onTriggerEmergencyStop,
   onToggleConveyorState,
   onExportReport,
-  unreadCriticalCount,
 }) => {
   const [timeStr, setTimeStr] = useState<string>('');
   const [isMuted, setIsMuted] = useState<boolean>(false);
@@ -91,7 +89,6 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="bg-[#0f172a] border-b border-slate-800 px-5 py-3 flex flex-wrap items-center justify-between gap-3 shadow-md relative z-30">
       {/* Left: Brand & Telemetry Mesh Identity */}
       <div className="flex items-center gap-3.5">
-        <div className="relative">
           <div className="relative">
   <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center">
     <svg
