@@ -131,20 +131,6 @@ export const Header: React.FC<HeaderProps> = ({
       />
     </svg>
   </div>
-
-  {unreadCriticalCount > 0 && (
-    <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full border border-slate-900 text-[10px] font-bold text-white flex items-center justify-center">
-      {unreadCriticalCount}
-    </span>
-  )}
-</div>
-          {unreadCriticalCount > 0 && (
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full border border-slate-900 text-[10px] font-bold text-white flex items-center justify-center">
-              {unreadCriticalCount}
-            </span>
-          )}
-        </div>
-
         <div>
           <div className="flex items-center gap-2.5">
             <h1 className="text-base font-bold text-white tracking-wide flex items-center gap-1.5">
