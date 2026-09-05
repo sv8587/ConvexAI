@@ -202,7 +202,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-2.5">
 
             <h1 className="text-base font-bold text-white tracking-wide flex items-center gap-1.5">
-              <span>BeltGuard AI</span>
+              <span>ConvexAI</span>
 
               <span className="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono font-normal">
                 SIH-26008
@@ -561,7 +561,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <ShieldAlert className="h-5 w-5 text-sky-400" />
 
                 <h2 className="text-base font-bold uppercase tracking-wide text-white">
-                  BeltGuard AI System Architecture
+                  ConvexAI System Architecture
                 </h2>
               </div>
 
