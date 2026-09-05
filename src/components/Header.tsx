@@ -145,7 +145,7 @@ return (
             </span>
           </div>
           <p className="text-xs text-slate-400 flex items-center gap-2">
-            <span>Pilbara Pit #4 • Overland CV-204 (4.8km)</span>
+            <span>Jharia #4 • Overland CV-204 (4.8km)</span>
             <span className="text-slate-600">•</span>
             <span className="text-slate-300">ST-5400 Steel Cord (2200mm)</span>
           </p>
