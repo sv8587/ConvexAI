@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
           hour: '2-digit',
           minute: '2-digit',
           second: '2-digit',
-        }) + ' AEST'
+        }) + ' IST'
       );
     };
 
@@ -220,7 +220,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           <p className="text-xs text-slate-400 flex items-center gap-2">
             <span>
-              Pilbara Pit #4 • Overland CV-204 (4.8km)
+              Jharia Pit #4 • Overland CV-204 (4.8km)
             </span>
 
             <span className="text-slate-600">
