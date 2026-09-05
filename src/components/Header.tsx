@@ -140,7 +140,7 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
     return (
-    <header className="bg-[#0f172a] border-b border-slate-800 px-5 py-3 flex flex-wrap items-center justify-between gap-3 shadow-md relative z-30">
+    <header className="bg-[#17111f] border-b border-slate-800 px-5 py-3 flex flex-wrap items-center justify-between gap-3 shadow-md relative z-30">
 
       {/* Left: Brand & Telemetry Mesh Identity */}
       <div className="flex items-center gap-3.5">
@@ -355,7 +355,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {showScenarioMenu && (
             <div
-              className="absolute right-0 z-50 mt-2 w-64 rounded-lg border border-slate-700 bg-[#0f172a] p-2 text-xs shadow-xl"
+              className="absolute right-0 z-50 mt-2 w-64 rounded-lg border border-slate-700 bg-[#17111f] p-2 text-xs shadow-xl"
               role="menu"
             >
               <div className="mb-1 border-b border-slate-800 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400">
@@ -545,7 +545,7 @@ export const Header: React.FC<HeaderProps> = ({
           aria-modal="true"
           aria-label="BeltGuard AI System Architecture"
         >
-          <div className="relative w-full max-w-2xl rounded-xl border border-slate-700 bg-[#0f172a] p-6 text-slate-200 shadow-2xl">
+          <div className="relative w-full max-w-2xl rounded-xl border border-slate-700 bg-[#17111f] p-6 text-slate-200 shadow-2xl">
 
             <div className="mb-4 flex items-center justify-between border-b border-slate-800 pb-3">
 
