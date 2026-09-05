@@ -2,28 +2,25 @@
 
 @layer base {
   :root {
-    /* ================================
-       CONVEXAI INDUSTRIAL THEME
-       ================================ */
+  --bg-main: #0d0a14;
+  --bg-card: #17111f;
+  --bg-card-hover: #21172d;
 
-    --bg-main: #07100f;
-    --bg-card: #0d1b19;
-    --bg-card-hover: #122724;
+  --border-color: #352344;
+  --border-subtle: #24182f;
 
-    --border-color: #1b3a35;
-    --border-subtle: #142b27;
+  --accent-primary: #a855f7;
+  --accent-secondary: #d946ef;
+  --accent-highlight: #c084fc;
 
-    --accent-primary: #20e3b2;
-    --accent-secondary: #38d9ff;
+  --accent-success: #22c55e;
+  --accent-warning: #f59e0b;
+  --accent-danger: #ef4444;
 
-    --accent-success: #20e3b2;
-    --accent-warning: #f5b942;
-    --accent-danger: #ff4d5a;
-
-    --text-primary: #e8f3f1;
-    --text-secondary: #8fa8a3;
-    --text-muted: #5f7772;
-  }
+  --text-primary: #f5f3ff;
+  --text-secondary: #b8a9c9;
+  --text-muted: #766582;
+}
 
   body {
     background-color: var(--bg-main);
