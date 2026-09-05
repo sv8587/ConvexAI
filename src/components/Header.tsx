@@ -139,23 +139,23 @@ export const Header: React.FC<HeaderProps> = ({
     setShowScenarioMenu(false);
   };
 
-  return (
-    <header className="relative z-30 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 bg-[#0f172a] px-5 py-3 shadow-md">
+    return (
+    <header className="bg-[#0f172a] border-b border-slate-800 px-5 py-3 flex flex-wrap items-center justify-between gap-3 shadow-md relative z-30">
 
-      {/* =========================
-          LEFT: BRAND
-      ========================= */}
+      {/* Left: Brand & Telemetry Mesh Identity */}
       <div className="flex items-center gap-3.5">
 
+        {/* Logo */}
         <div className="relative">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 bg-slate-800">
+          <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center">
             <svg
               viewBox="0 0 48 48"
-              className="h-6 w-6"
+              className="w-6 h-6"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               aria-label="BeltGuard AI logo"
             >
+              {/* Conveyor / mountain-inspired mark */}
               <path
                 d="M8 34L18 18L25 27L32 12L40 34"
                 stroke="#22d3ee"
@@ -189,7 +189,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Critical alert count */}
           {unreadCriticalCount > 0 && (
-            <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full border border-slate-900 bg-red-600 text-[10px] font-bold text-white">
+            <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full border border-slate-900 text-[10px] font-bold text-white flex items-center justify-center">
               {unreadCriticalCount > 99
                 ? '99+'
                 : unreadCriticalCount}
@@ -197,31 +197,35 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
 
+        {/* Brand information */}
         <div>
           <div className="flex items-center gap-2.5">
 
-            <h1 className="flex items-center gap-1.5 text-base font-bold tracking-wide text-white">
+            <h1 className="text-base font-bold text-white tracking-wide flex items-center gap-1.5">
               <span>BeltGuard AI</span>
 
-              <span className="rounded bg-slate-800 px-1.5 py-0.5 font-mono text-[11px] font-normal text-slate-400">
+              <span className="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono font-normal">
                 SIH-26008
               </span>
             </h1>
 
             {getStatusBadge()}
 
-            <span className="hidden items-center gap-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-2 py-0.5 font-mono text-[10px] text-indigo-300 sm:flex">
-              <Lock className="h-3 w-3 text-indigo-400" />
+            <span className="hidden sm:flex items-center gap-1 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono text-[10px]">
+              <Lock className="w-3 h-3 text-indigo-400" />
               <span>IEC 62443 SL-3</span>
             </span>
+
           </div>
 
-          <p className="flex items-center gap-2 text-xs text-slate-400">
+          <p className="text-xs text-slate-400 flex items-center gap-2">
             <span>
               Pilbara Pit #4 • Overland CV-204 (4.8km)
             </span>
 
-            <span className="text-slate-600">•</span>
+            <span className="text-slate-600">
+              •
+            </span>
 
             <span className="text-slate-300">
               ST-5400 Steel Cord (2200mm)
